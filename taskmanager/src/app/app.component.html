@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <a id="home"  style="color:bisque;font-family: fantasy" class="navbar-brand " routerLink="/" routerLinkActive="active">Home</a>
+          <a id="addTask" style="color:bisque;font-family: fantasy" class="navbar-brand " routerLink="/add" routerLinkActive="active" >Add Task</a>   
+          <a id="viewTask" style="color:bisque;font-family: fantasy" class="navbar-brand " routerLink="/view" routerLinkActive="active" >View Task</a>
+        </div>
+    <br>
+    <h1 id="appTitle" class="font-weight-bold" style="color:rgb(176, 173, 240);font-family: cursive" >{{ title }}..!</h1>
+    <p class="lead" style="color:rgb(176, 173, 240);font-style: italic;">Regardless of your profession or industry, having to deal with multiple deadlines is commonplace in working life. It’s easy to feel under pressure and fall behind with your work when you have so much to do, but task management software can help keep things under control.</p>
+  </div>
+</div>
+<router-outlet></router-outlet>
