@@ -62,9 +62,10 @@
     </div>
   </div>
   <hr>
-  <div id="rowList" class="row" *ngFor="let task of filteredTasks">
+  <div id="rowList" style="height: 60px;" class="row" *ngFor="let task of filteredTasks">
     <div class="col-lg-2">
-      <textarea [readonly]='true'>{{task.taskName}}</textarea>
+      <!--<textarea [readonly]='true'>{{task.taskName}}</textarea>-->
+      <label>{{task.taskName}}</label>
     </div>
     <div class="col-lg-1">
       <label>{{task.priority}}</label>

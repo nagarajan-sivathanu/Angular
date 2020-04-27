@@ -95,7 +95,7 @@ export class ViewTaskComponent implements OnInit {
       this.filteredTasks=_.filter(this.tasks, function(o){
         hasCriteriaMet = true;
         if(form.value.taskName !== ""){
-          if(o.task!==form.value.taskName){
+          if(o.taskName!==form.value.taskName){
               hasCriteriaMet=false;
           }
         }
